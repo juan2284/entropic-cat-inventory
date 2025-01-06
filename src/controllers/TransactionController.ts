@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import Transaction, { ITransaction } from "@/models/Transaction.js";
-import Payment from '@/models/Payment.js';
-import Charge from '@/models/Charge.js';
+import Transaction, { ITransaction } from "../models/Transaction.js";
+import Payment from '../models/Payment.js';
+import Charge from '../models/Charge.js';
 
 export class TransactionController {
 

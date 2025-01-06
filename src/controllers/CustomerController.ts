@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Customer, { ICustomer } from '@/models/Customer.js';
+import Customer, { ICustomer } from '../models/Customer.js';
 
 export class CustomerController {
 

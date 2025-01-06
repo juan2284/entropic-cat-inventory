@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import transactionExists from "@/middlewares/transactionExist.js";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import { TransactionController } from "@/controllers/TransactionController.js";
+import transactionExists from "../middlewares/transactionExist.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import { TransactionController } from "../controllers/TransactionController.js";
 
 const router = Router();
 router.param('transactionId', transactionExists);

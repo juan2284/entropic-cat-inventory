@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Supplier, { ISupplier } from '@/models/Supplier.js';
+import Supplier, { ISupplier } from '../models/Supplier.js';
 
 export class SupplierController {
 

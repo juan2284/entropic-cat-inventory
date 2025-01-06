@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Charge, { ICharge } from '@/models/Charge.js';
+import Charge, { ICharge } from '../models/Charge.js';
 
 declare global {
   namespace Express {

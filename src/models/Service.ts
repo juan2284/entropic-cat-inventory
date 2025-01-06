@@ -1,7 +1,7 @@
 import mongoose, { Document, PopulatedDoc, Schema, Types } from "mongoose";
-import { ICustomer } from "@/models/Customer.js";
-import { IPayment } from "@/models/Payment.js";
-import { IReminder } from "@/models/Reminder.js";
+import { ICustomer } from "../models/Customer.js";
+import { IPayment } from "../models/Payment.js";
+import { IReminder } from "../models/Reminder.js";
 
 export interface IService extends Document {
   customer: PopulatedDoc<ICustomer & Document>;

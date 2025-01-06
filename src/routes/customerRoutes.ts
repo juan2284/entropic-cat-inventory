@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import { CustomerController } from "@/controllers/CustomerController.js";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import customerExists from "@/middlewares/customerExist.js";
+import { CustomerController } from "../controllers/CustomerController.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import customerExists from "../middlewares/customerExist.js";
 
 const router = Router();
 router.param('customerId', customerExists);

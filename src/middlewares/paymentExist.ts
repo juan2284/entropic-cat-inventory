@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Payment, { IPayment } from '@/models/Payment.js';
+import Payment, { IPayment } from '../models/Payment.js';
 
 declare global {
   namespace Express {

@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import chargeExists from "@/middlewares/chargeExist.js";
-import { ChargeController } from "@/controllers/ChargeController.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import chargeExists from "../middlewares/chargeExist.js";
+import { ChargeController } from "../controllers/ChargeController.js";
 
 const router = Router();
 router.param('chargeId', chargeExists);

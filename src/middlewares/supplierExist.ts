@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Supplier, { ISupplier } from '@/models/Supplier.js';
+import Supplier, { ISupplier } from '../models/Supplier.js';
 
 declare global {
   namespace Express {

@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import paymentExists from "@/middlewares/paymentExist.js";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import { PaymentController } from "@/controllers/PaymentController.js";
+import paymentExists from "../middlewares/paymentExist.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import { PaymentController } from "../controllers/PaymentController.js";
 
 const router = Router();
 router.param('paymentId', paymentExists);

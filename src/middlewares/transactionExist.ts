@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Transaction, { ITransaction } from '@/models/Transaction.js';
+import Transaction, { ITransaction } from '../models/Transaction.js';
 
 declare global {
   namespace Express {

@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import stocktakingExists from "@/middlewares/stocktakingExist.js";
-import { StocktakingController } from "@/controllers/StocktakingController.js";
-import { handleInputErrors } from "@/middlewares/validation.js";
+import stocktakingExists from "../middlewares/stocktakingExist.js";
+import { StocktakingController } from "../controllers/StocktakingController.js";
+import { handleInputErrors } from "../middlewares/validation.js";
 
 const router = Router();
 router.param('stockId', stocktakingExists);

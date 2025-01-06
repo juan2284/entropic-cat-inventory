@@ -1,6 +1,6 @@
 import mongoose, { Document, PopulatedDoc, Schema, Types } from "mongoose";
-import { IPayment } from "@/models/Payment.js";
-import { ICharge } from "@/models/Charge.js";
+import { IPayment } from "../models/Payment.js";
+import { ICharge } from "../models/Charge.js";
 
 const transactionType = {
   CREATION: 'creation',

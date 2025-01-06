@@ -1,6 +1,6 @@
 import mongoose, { Document, PopulatedDoc, Schema, Types } from "mongoose";
-import { ICustomer } from "@/models/Customer.js";
-import { IStocktaking } from "@/models/Stocktaking.js";
+import { ICustomer } from "../models/Customer.js";
+import { IStocktaking } from "../models/Stocktaking.js";
 
 const paymentStatus = {
   PENDING: 'pending',

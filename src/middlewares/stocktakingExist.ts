@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Stocktaking, { IStocktaking } from '@/models/Stocktaking.js';
+import Stocktaking, { IStocktaking } from '../models/Stocktaking.js';
 
 declare global {
   namespace Express {

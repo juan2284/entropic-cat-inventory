@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import Reminder, { IReminder } from '@/models/Reminder.js';
+import Reminder, { IReminder } from '../models/Reminder.js';
 
 declare global {
   namespace Express {

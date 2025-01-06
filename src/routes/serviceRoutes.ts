@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import { ServiceController } from "@/controllers/ServiceController.js";
-import serviceExists from "@/middlewares/serviceExist.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import { ServiceController } from "../controllers/ServiceController.js";
+import serviceExists from "../middlewares/serviceExist.js";
 
 const router = Router();
 router.param('serviceId', serviceExists);

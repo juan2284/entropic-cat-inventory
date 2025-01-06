@@ -1,9 +1,9 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import { AuthController } from "@/controllers/AuthController.js";
-import { authenticate } from "@/middlewares/auth.js";
-import userExists from "@/middlewares/userExist.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import { AuthController } from "../controllers/AuthController.js";
+import { authenticate } from "../middlewares/auth.js";
+import userExists from "../middlewares/userExist.js";
 
 const router = Router();
 

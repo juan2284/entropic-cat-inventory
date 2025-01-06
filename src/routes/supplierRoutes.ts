@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import supplierExists from "@/middlewares/supplierExist.js";
-import { SupplierController } from "@/controllers/SupplierController.js";
-import { handleInputErrors } from "@/middlewares/validation.js";
+import supplierExists from "../middlewares/supplierExist.js";
+import { SupplierController } from "../controllers/SupplierController.js";
+import { handleInputErrors } from "../middlewares/validation.js";
 
 const router = Router();
 router.param('supplierId', supplierExists);

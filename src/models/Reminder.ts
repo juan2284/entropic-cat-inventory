@@ -1,5 +1,5 @@
 import mongoose, { Document, PopulatedDoc, Schema, Types } from "mongoose";
-import { IService } from "@/models/Service.js";
+import { IService } from "../models/Service.js";
 
 const contactResults = {
   PENDING: 'pending',

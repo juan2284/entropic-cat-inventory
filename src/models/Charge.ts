@@ -1,6 +1,6 @@
 import mongoose, { Document, PopulatedDoc, Schema, Types } from "mongoose";
-import { IProduct } from "@/models/Product.js";
-import { ISupplier } from "@/models/Supplier.js";
+import { IProduct } from "../models/Product.js";
+import { ISupplier } from "../models/Supplier.js";
 
 const chargeStatus = {
   PENDING: 'pending',

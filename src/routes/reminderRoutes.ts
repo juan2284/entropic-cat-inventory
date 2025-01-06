@@ -1,8 +1,8 @@
 import { Router } from "express";
 import { body, param } from "express-validator";
-import reminderExists from "@/middlewares/reminderExist.js";
-import { handleInputErrors } from "@/middlewares/validation.js";
-import { ReminderController } from "@/controllers/ReminderController.js";
+import reminderExists from "../middlewares/reminderExist.js";
+import { handleInputErrors } from "../middlewares/validation.js";
+import { ReminderController } from "../controllers/ReminderController.js";
 
 const router = Router();
 router.param('reminderId', reminderExists);

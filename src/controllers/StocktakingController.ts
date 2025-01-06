@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Stocktaking, { IStocktaking } from "@/models/Stocktaking.js";
+import Stocktaking, { IStocktaking } from "../models/Stocktaking.js";
 
 export class StocktakingController {
 

@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import Service, { IService } from '@/models/Service.js';
-import Reminder, { IReminder } from '@/models/Reminder.js';
+import Service, { IService } from '../models/Service.js';
+import Reminder, { IReminder } from '../models/Reminder.js';
 
 export class ServiceController {
 

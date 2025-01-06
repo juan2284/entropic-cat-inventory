@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Reminder, { IReminder } from "@/models/Reminder.js";
+import Reminder, { IReminder } from "../models/Reminder.js";
 
 export class ReminderController {
 

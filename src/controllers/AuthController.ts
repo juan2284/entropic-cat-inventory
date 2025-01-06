@@ -1,10 +1,10 @@
 import { Request, Response } from 'express';
-import User from "@/models/User.js";
-import Token from '@/models/Token.js';
-import { checkPassword, hashPassword } from '@/utils/auth.js';
-import { generateToken } from '@/utils/token.js';
-import { generateJWT } from '@/utils/jwt.js';
-import { AuthEmailResend } from '@/emails/ResendAuthEmail.js';
+import User from "../models/User.js";
+import Token from '../models/Token.js';
+import { checkPassword, hashPassword } from '../utils/auth.js';
+import { generateToken } from '../utils/token.js';
+import { generateJWT } from '../utils/jwt.js';
+import { AuthEmailResend } from '../emails/ResendAuthEmail.js';
 
 export class AuthController {
 

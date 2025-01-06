@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Product, { IProduct } from '@/models/Product.js';
+import Product, { IProduct } from '../models/Product.js';
 
 export class ProductController {
 

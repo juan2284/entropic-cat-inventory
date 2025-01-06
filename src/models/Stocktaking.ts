@@ -1,8 +1,8 @@
 import mongoose, { Document, PopulatedDoc, Schema, Types } from "mongoose";
-import { ISupplier } from "@/models/Supplier.js";
-import { IProduct } from "@/models/Product.js";
-import { ICharge } from "@/models/Charge.js";
-import { IPayment } from "@/models/Payment.js";
+import { ISupplier } from "../models/Supplier.js";
+import { IProduct } from "../models/Product.js";
+import { ICharge } from "../models/Charge.js";
+import { IPayment } from "../models/Payment.js";
 
 export interface IStocktaking extends Document {
   product: PopulatedDoc<IProduct & Document>;
