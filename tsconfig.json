@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": [
+      "esnext"
+    ],
+    "target": "ESNext",
+
+    "baseUrl": "src",
+    "paths" : {
+      "@/*" : ["./src/*"],
+      "@/config/*" : ["config/*"],
+      "@/controllers/*" : ["controllers/*"],
+      "@/emails/*" : ["emails/*"],
+      "@/middlewares/*" : ["middlewares/*"],
+      "@/models/*" : ["models/*"],
+      "@/routes/*" : ["routes/*"],
+      "@/utils/*" : ["utils/*"]
+    },
+
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "strict": false,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
