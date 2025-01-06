@@ -3,14 +3,14 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-export const corsMiddleware = () => cors({
-  origin: (origin, callback) => {
-    
-    const ACCEPTED_ORIGINS = [
-      process.env.FRONTEND_URL
-    ];
+const ACCEPTED_ORIGINS = [
+  process.env.FRONTEND_URL
+];
 
-    if (ACCEPTED_ORIGINS.includes(origin)) {
+export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => cors({
+  origin: (origin, callback) => {    
+
+    if (acceptedOrigins.includes(origin)) {
       return callback(null, true);
     }
 
